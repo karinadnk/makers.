@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makers</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="nav">
+        <img src="./images/logo.svg" alt="brand logo" />
+        <div class="burger-menu">
+          <img
+            src="./images/burger_menu-4af87aba.svg"
+            alt="burger-icon"
+            class="burger-icon"
+          />
+        </div>
+        <ul class="nav-list">
+          <li>Мои шаги</li>
+          <li>График обучения</li>
+          <li>Что я получу?</li>
+          <li>Бесплатные курсы</li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="main-hero">
+        <div>
+          <h2>
+            Получи роботу программистом
+            <br />
+            <span>В IT компании</span>
+          </h2>
+          <p>
+            Makers быстро обучит с нуля, даст практический опыт
+            <br />
+            и будет с тобой до твоей первой зарплаты.
+          </p>
+          <button>Получи консультацию</button>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <div class="container">
+      <div class="title">
+        <h3>Истории успехов выпусников</h3>
+        <img class="plus__img" src="./images/plus.png" alt="plus" /><span
+          >Добавить</span
+        >
+        <a href="#">Все выпусники</a>
+      </div>
+      <div class="cards__mentors">
+        <div class="cards__item">
+          <div class="image-cont">
+            <img
+              class="card-image"
+              src="./images/photo_2023-07-12_11-44-02.jpg"
+              alt="student-image"
+            />
+          </div>
+          <div class="card-description">
+            <h3 class="card-name">Каныкей Арстанбаева</h3>
+            <h3 class="card-position">Backend Developer/ DataScience</h3>
+          </div>
+        </div>
+
+        <div class="cards__item">
+          <div class="image-cont">
+            <img
+              class="card-image"
+              src="./images/photo_2023-07-12_11-43-49.jpg"
+              alt="student-image"
+            />
+          </div>
+          <div class="card-description">
+            <h3 class="card-name">Тофик Гаджиев</h3>
+            <h3 class="card-position">Backend Developer</h3>
+          </div>
+        </div>
+
+        <div class="cards__item">
+          <div class="image-cont">
+            <img
+              class="card-image"
+              src="./images/photo_2023-07-12_11-43-21.jpg"
+              alt="student-image"
+            />
+          </div>
+          <div class="card-description">
+            <h3 class="card-name">Мирбек Баратбаев</h3>
+            <h3 class="card-position">Frontend Developer</h3>
+          </div>
+        </div>
+
+        <div class="cards__item">
+          <div class="image-cont">
+            <img
+              class="card-image"
+              src="./images/photo_2023-07-12_11-44-22.jpg"
+              alt="student-image"
+            />
+          </div>
+          <div class="card-description">
+            <h3 class="card-name">Богдан Бочкарев</h3>
+            <h3 class="card-position">Backend Developer</h3>
+          </div>
+        </div>
+      </div>
+      <div class="cards"></div>
+      <div class="modal">
+        <div class="benefits-close-container">
+          <button class="modal__close btn-close-edit">X</button>
+        </div>
+        <section class="modal_body">
+          <h3>Добавить карточку</h3>
+          <input id="name" type="text" placeholder="Имя" />
+          <input id="position" type="text" placeholder="Должность" />
+          <input id="image" type="text" placeholder="Адрес картинки" />
+          <button id="saveBtn">Сохранить</button>
+        </section>
+      </div>
+
+      <div class="edit-modal">
+        <div class="inner-modal">
+          <div class="close-edit-modal">
+            <h3>Редактировать</h3>
+            <button class="btn-close-edit">X</button>
+          </div>
+          <input type="text" class="name-edit" placeholder="Имя" />
+          <input type="text" class="position-edit" placeholder="Должность" />
+          <input type="text" name="" class="image-edit" placeholder="Фото" />
+          <button class="edit-save">Сохранить</button>
+        </div>
+      </div>
+      <div class="partners">
+        <h3>Наши партнёры</h3>
+        <div class="partners-list">
+          <img src="./images/Google-icon.svg" alt="1" />
+          <img src="./images/amazon-icon.svg" alt="2" />
+          <img src="./images/airbnb-icon.svg" alt="3" />
+          <img src="./images/facebook-icon.svg" alt="4" />
+          <img src="./images/slack-icon.svg" alt="5" />
+          <img src="./images/shopify-icon.svg" alt="6" />
+          <img src="./images/airbnb-icon.svg" alt="7" />
+          <img src="./images/Analytics-icon.svg" alt="8" />
+          <img src="./images/zoom-icon.svg" alt="9" />
+        </div>
+      </div>
+
+      <div class="info-block">
+        <h3>
+          Узнай с чего начать карьеру в IT,
+          <br />
+          о направлениях и профессиях
+        </h3>
+        <div class="info-block-entries">
+          <button>Все IT профессии тут</button>
+          <div class="info-block-entries-img">
+            <img src="./images/laptop-icon.png" alt="laptop" />
+          </div>
+        </div>
+      </div>
+      <section class="benefits">
+        <h3 class="titles">Что ты получишь у нас:</h3>
+        <div>
+          <img
+            id="benefits-add"
+            class="plus__img"
+            src="./images/plus.png"
+            alt="plus"
+          />
+        </div>
+        <div class="benefits__items"></div>
+        <!-- <div class="benefits__item">
+          <div class="benefits__number">
+            01
+          </div>
+          <p class="benefits__info">
+            Изучение программирования с нуля в 2 раза быстрее чем на других курсах. Мы - самые выгодные среди всех курсов в Бишкеке!
+          </p>
+        </div>
+        <div class="benefits__item">
+          <div class="benefits__number">
+            02
+          </div>
+          <p class="benefits__info">
+            Онлайн-стажировка после изучения. Стажировка была утверждена реальными IT компаниями. Работа над проектами как в реальных IT компаниях.
+          </p>
+        </div>
+        <div class="benefits__item">
+          <div class="benefits__number">
+            03
+          </div>
+          <p class="benefits__info">
+            Легкий доступ к компаниям.Твое портфолио увидят десятки компаний. 
+            Мы тебя свяжем с компаниями и поможем обустроиться в работе.
+          </p>
+        </div> -->
+
+        <div class="benefits__modal modal">
+          <div class="benefits-close-container">
+            <button class="benefits-close-btn">X</button>
+          </div>
+          <section class="benefits__body modal_body">
+            <h3>Добавить новый элемент</h3>
+            <input id="benefits-number" type="text" placeholder="Номер" />
+            <input id="benefits-desc" type="text" placeholder="Описание" />
+            <button id="benefits__save" class="edit-save">Сохранить</button>
+          </section>
+        </div>
+
+        <div class="benefit__edit edit-modal">
+          <div class="benefits-close-container">
+            <button class="benefits__edit-close benefits-close-btn">X</button>
+          </div>
+          <div class="benefit__inner_edit inner-modal">
+            <div class="benefit__close_edit close-edit-modal">
+              <h3>Редактировать</h3>
+            </div>
+            <input
+              type="text"
+              class="benefit__number_edit"
+              placeholder="Номер"
+            />
+            <input
+              type="text"
+              class="benefit__desc_edit"
+              placeholder="Описание"
+            />
+            <button class="benefit__save_edit edit-save">Сохранить</button>
+          </div>
+        </div>
+      </section>
+      <section class="steps">
+        <h3 class="titles">Как мы из тебя сделаем программиста?</h3>
+        <p class="steps__main">
+          У тебя будет личный менеджер на каждом из этих этапов. 
+        </p>
+        <div>
+          <img
+            class="plus__img"
+            id="steps__add"
+            src="./images/plus.png"
+            alt="plus"
+          />
+        </div>
+        <div class="steps__cards">
+          <div class="steps__card">
+            <p class="steps__number">01</p>
+            <p class="steps__title">Выберем направление</p>
+            <p class="steps__info">
+              Определим направление, что изучать и построим путь с чего начать.
+            </p>
+          </div>
+          <div class="steps__card">
+            <p class="steps__number">02</p>
+            <p class="steps__title">Изучим основы языка</p>
+            <p class="steps__info">
+              Будете уметь делать проекты. Обучение при полной поддержки от
+              ментора и от личного менеджера.
+            </p>
+          </div>
+          <div class="steps__card">
+            <p class="steps__number">03</p>
+            <p class="steps__title">Онлайн-стажировка</p>
+            <p class="steps__info">
+              Обязательная практика на реальных проектах для выпускников после
+              bootcamp.
+            </p>
+          </div>
+          <div class="steps__card">
+            <p class="steps__number">04</p>
+            <p class="steps__title">Трудоустройство</p>
+            <p class="steps__info">
+              Твой менеджер лично будет продвигать тебя. Твое портфолио будет
+              доступно и виден десяткам компаний Кыргызстана и Казахстана.
+            </p>
+          </div>
+        </div>
+        <div class="steps__new"></div>
+
+        <div class="steps__modal modal">
+          <div class="close-edit-modal benefits-close-container">
+            <button class="steps-close-btn btn-close-edit">X</button>
+          </div>
+          <section class="steps__body modal_body">
+            <h3>Добавить новый элемент</h3>
+            <input id="steps-number" type="text" placeholder="Номер" />
+            <input id="steps-title" type="text" placeholder="Название" />
+            <input id="steps-desc" type="text" placeholder="Описание" />
+            <button id="steps__save" class="edit-save">Сохранить</button>
+          </section>
+        </div>
+
+        <div class="steps__edit edit-modal">
+          <div class="benefits-close-container">
+            <button class="steps__edit-close benefits-close-btn">X</button>
+          </div>
+          <div class="steps__inner_edit inner-modal">
+            <div class="steps__close_edit close-edit-modal">
+              <h3>Редактировать</h3>
+            </div>
+            <input type="text" class="steps__number_edit" placeholder="Номер" />
+            <input
+              type="text"
+              class="steps__title_edit"
+              placeholder="Заголовок"
+            />
+            <input
+              type="text"
+              class="steps__desc_edit"
+              placeholder="Описание"
+            />
+            <button class="step__save_edit edit-save">Сохранить</button>
+          </div>
+        </div>
+      </section>
+      <section class="schedule">
+        <div class="schedule__card">
+          <h3>Дневной формат</h3>
+          <hr class="schedule__hr" />
+          <ul class="schedule__list">
+            <li>
+              <img src="./images/Vector.png" alt="check" /><span
+                >8 часов в день</span
+              >
+            </li>
+            <li>
+              <img src="./images/Vector.png" alt="check" /><span
+                >5 дней в неделю</span
+              >
+            </li>
+            <li>
+              <img src="./images/Vector.png" alt="check" /><span
+                >40 часов в неделю</span
+              >
+            </li>
+            <li>
+              <img src="./images/Vector.png" alt="check" /><span
+                >10.00 - 18.00</span
+              >
+            </li>
+            <li>
+              <img src="./images/Vector.png" alt="check" /><span
+                >Продолжительность - 4 месяца.
+              </span>
+            </li>
+            <li>
+              <img src="./images/Vector.png" alt="check" /><span
+                >Онлайн стажировка</span
+              >
+            </li>
+            <li>
+              <img src="./images/Vector.png" alt="check" /><span
+                >JavaScript / Python</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="schedule__card">
+          <h3>Вечерний формат</h3>
+          <hr class="schedule__hr" />
+          <ul class="schedule__list">
+            <li>
+              <img src="./images/Vector.png" alt="check" /><span
+                >3 часа в день</span
+              >
+            </li>
+            <li>
+              <img src="./images/Vector.png" alt="check" /><span
+                >5 дней в неделю</span
+              >
+            </li>
+            <li>
+              <img src="./images/Vector.png" alt="check" /><span
+                >15 часов в неделю</span
+              >
+            </li>
+            <li>
+              <img src="./images/Vector.png" alt="check" /><span
+                >18.30 - 21.30</span
+              >
+            </li>
+            <li>
+              <img src="./images/Vector.png" alt="check" /><span
+                >Продолжительность - 4.5 месяца
+              </span>
+            </li>
+            <li>
+              <img src="./images/Vector.png" alt="check" /><span
+                >Онлайн стажировка</span
+              >
+            </li>
+            <li>
+              <img src="./images/Vector.png" alt="check" /><span
+                >JavaScript / Python</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div>
+        <img src="./images/Makers-logo.png" alt="makers logo" />
+        <p class="footer__rights">© 2023 makers. All rights reserved</p>
+      </div>
+      <div class="footer__info">
+        <div class="footer__phones">
+          <span>+996 704 409 409</span>
+          <span>+996 704 409 409</span>
+        </div>
+        <p>Табышалиева 29, Bishkek Kyrgyzstan</p>
+        <div>
+          <img src="./images/messengers.png" alt="" />
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
